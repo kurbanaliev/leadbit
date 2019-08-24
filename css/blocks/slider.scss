@@ -26,8 +26,7 @@
 .slider__content-item{
   position: relative;
   transition: transform 0.6s ease;
-  flex: 0 0 33%;
-  max-width: 33%;
+  width: 33%;
   margin-top: rem(100px);
   display: flex;
   justify-content: center;
@@ -67,7 +66,7 @@
   cursor: pointer;
   &-prev{
     left: 6px;
-    top: 89%;
+    top: 80%;
     transform: rotate(45deg);
     outline: none;
     @include tablets{
@@ -76,7 +75,7 @@
   }
   &-next{
     right: 6px;
-    top: 89%;
+    top: 80%;
     transform: rotate(225deg);
     outline: none;
     @include tablets{
