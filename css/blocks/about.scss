@@ -4,7 +4,16 @@
     min-height: 75.375rem;
   }
   @include iphone10 {
-    min-height: 105.375rem;
+    min-height: 110.375rem;
+  }
+  @include iphone9 {
+    min-height: 110rem;
+  }
+  @include phones {
+    min-height: 75rem;
+  }
+  @include iphone8 {
+    min-height: 105rem;
   }
 }
 
@@ -17,13 +26,7 @@
   z-index: 10;
   left: 0;
   right: 0;
-  @include tablets{
-    height: rem(1083px);
-  }
-  @include phones{
-    position: relative;
-    height: 104.6875rem;
-  }
+
 }
 
 .about__content{

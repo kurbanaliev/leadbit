@@ -3,6 +3,9 @@
   min-height: rem(790px);
   width: 100%;
   position: static;
+  @include iphone9 {
+    min-height: 64.375rem;
+  }
   @include phones{
     min-height: 35rem;
   }
@@ -129,7 +132,7 @@
     margin-top: 6.625rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1.625rem;
     align-items: center;
   }
