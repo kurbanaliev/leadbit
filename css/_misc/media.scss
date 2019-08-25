@@ -4,7 +4,11 @@
     @content;
   }
 }
-
+@mixin bigtablets{
+  @media screen and (max-width:$bigtablets){
+    @content;
+  }
+}
 @mixin tablets{
   @media screen and (max-width:$tablets){
     @content;
@@ -13,6 +17,11 @@
 
 @mixin phones{
   @media screen and (max-width:$phones){
+    @content;
+  }
+}
+@mixin iphone10{
+  @media screen and (max-width:$iphone10){
     @content;
   }
 }

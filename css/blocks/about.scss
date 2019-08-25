@@ -1,5 +1,11 @@
 .about{
   min-height: rem(790px);
+  @include bigtablets {
+    min-height: 75.375rem;
+  }
+  @include iphone10 {
+    min-height: 105.375rem;
+  }
 }
 
 .about__container{
@@ -14,8 +20,9 @@
   @include tablets{
     height: rem(1083px);
   }
-  @include phones-small{
-    height: rem(1163px);
+  @include phones{
+    position: relative;
+    height: 104.6875rem;
   }
 }
 
@@ -81,10 +88,11 @@
   width: rem(682px);
   @include tablets{
     font-size: rem(20px);
+    width: 33.625rem;
   }
   @include phones{
     font-size: rem(18px);
-    width: rem(458px);
+    width: 27.625rem;
   }
   @include phones-small{
     width: rem(346px);

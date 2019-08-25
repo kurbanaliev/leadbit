@@ -3,11 +3,14 @@
   min-height: rem(790px);
   width: 100%;
   position: static;
+  @include phones{
+    min-height: 35rem;
+  }
 }
 .statistic__container{
   height: rem(790px);
   @include phones{
-    height: rem(870px);
+    height: 35.375rem;
   }
   @include phones-small{
     height: rem(928px);
@@ -111,12 +114,24 @@
   @include tablets{
     margin-top: rem(346px);
   }
+  @include bigtablets{
+    margin-top: 10.625rem;
+    margin: auto 0;
+  }
   @include phones{
-    margin-top: rem(298px);
+    margin-top: 0.625rem;
     flex-direction: column;
   }
   @include phones-small{
     margin-top: rem(358px);
+  }
+  @include iphone10 {
+    margin-top: 6.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.625rem;
+    align-items: center;
   }
 }
 .statistic__item{

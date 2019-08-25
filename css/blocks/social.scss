@@ -3,6 +3,9 @@
   @include laptops{
     margin-left: rem(22px);
   }
+  @include bigtablets{
+    display: none;
+  }
   @include tablets{ 
     display: none;
   }

@@ -7,8 +7,9 @@
   background: transparent;
   border: transparent;
   padding: 0;
+  display: none;
   @include tablets{
-    display: flex;
+    display: none;
   }
 }
 .hamburger__button-element {
