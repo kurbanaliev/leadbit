@@ -3,11 +3,17 @@
   @include phones-small{
     height: rem(1072px);
   }
+  @include iphone8 {
+    height: 52rem;
+  }
 }
 
 .registration__container{
   background-color: #e7e9ea;
   text-align: center;
+  @include tablets{
+    width: 100%;
+  }
 }
 .registration__content{
   position: relative;
@@ -23,6 +29,9 @@
       top: 37%;
       height: rem(509px);
     }
+    @include iphone10{
+      visibility: hidden;
+    }
   }
   &::after{
     content: "";
@@ -35,6 +44,9 @@
     @include phones-small{
       top: 37%;
       height: rem(509px);
+    }
+    @include iphone10{
+      visibility: hidden;
     }
   }
 }
@@ -75,7 +87,7 @@
   color: #142831;
   letter-spacing: 2px;
   @include phones{
-    font-size: rem(16px);
+    font-size: rem(14px);
   }
 }
 .registration__button{

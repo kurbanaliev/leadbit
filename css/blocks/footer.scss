@@ -2,6 +2,9 @@
   height: rem(543px);
   width: 100%;
   background-image: linear-gradient(to top, #142831, #14313e 98%);
+  @include phones {
+    height: 100%;
+  }
 }
 
 .footer__contacts{
@@ -12,12 +15,11 @@
 }
 .footer__communication-list{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
 }
 .footer__communication-link{
   width: rem(41px);
-  height: rem(41px);
   display: flex;
   align-items: center;
   flex-direction: column;
